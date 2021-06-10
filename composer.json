@@ -1,0 +1,38 @@
+{
+    "name": "gvera/email",
+    "description": "gv email",
+    "license": "MIT",
+    "keywords": ["gv", "email"],
+    "authors": [
+        {
+            "name": "Guido Vera",
+            "email": "vera.a.guido@gmail.com"
+        }
+    ],
+    "config": {
+        "platform" :{
+            "php": "8.0.0"
+        }
+    },
+    "require": {
+	    "gvera/config": "^1.0",
+        "phpmailer/phpmailer":      "6.1.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit":          "^9.0",
+        "pcov/clobber": "^2.0"
+    },
+    "scripts": {
+    },
+    "autoload": {
+      "psr-4": {
+        "Gvera\\": [
+            "src/"
+        ],
+          "Tests\\": [
+              "tests/"
+          ]
+      }
+    }
+}
+
